@@ -8,7 +8,7 @@ while(cap.isOpened()):
 
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
-    cv2.imshow('frame', gray)
+    cv2.imshow('frame', frame)
     if cv2.waitKey(25) & 0xFF == ord('q'): # Waitkey is the speed of it, 'q' is quit
     
         break

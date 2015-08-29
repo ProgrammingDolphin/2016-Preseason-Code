@@ -4,7 +4,7 @@ import cv2
 cap = cv2.VideoCapture(0)
 
 # Define the codec and create VideoWriter object
-fourcc = cv2.VideoWriter_fourcc(*'XVID')
+fourcc = cv2.VideoWriter_fourcc(*'MJPG')
 out = cv2.VideoWriter('output.avi',fourcc, 20.0, (640,480))
 
 while(cap.isOpened()):
@@ -19,8 +19,8 @@ while(cap.isOpened()):
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
 
-        else:
-            break
+    else:
+        break
 
 #Releases everything once you're finished
 cap.release()

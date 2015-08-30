@@ -15,7 +15,7 @@ while(True):
 
     # Displays final frame
     cv2.imshow('frame',frame)
-    if cv2.waitKey(1)& 0xFF == ord('q'): #Hit 'q' to quit
+    if cv2.waitKey(1) & 0xFF == 27: # Hit esc to kill it
         break
 
 

@@ -9,8 +9,7 @@ while(cap.isOpened()):
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
     cv2.imshow('frame', frame)
-    if cv2.waitKey(25) & 0xFF == ord('q'): # Waitkey is the speed of it, 'q' is quit
-    
+    if cv2.waitKey(1) & 0xFF == 27: # Waitkey is the wait, 27 means you hit esc to kill it 
         break
 
 cap.release()
